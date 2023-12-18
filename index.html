@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div class="nes-container with-title is-centered">
+      <p class="title">Password</p>
+      <p class="text">abceoaduoa123</p>
+    </div>
+
+    <div class="wrapper">
+      <div class="buttons">
+        <button
+          type="button"
+          class="nes-btn"
+          data-action="copy">
+          Copy
+        </button>
+
+        <button
+          type="button"
+          class="nes-btn is-primary"
+          data-action="generate">
+          Generate
+        </button>
+      </div>
+
+      <div
+        class="nes-field is-inline"
+        data-option="character">
+        <label for="inline_field"></label>
+        <input
+          type="text"
+          id="inline_field"
+          class="nes-input is-success"
+          inputmode="numeric"
+          value="14"
+          placeholder="14" />
+        <progress
+          class="nes-progress is-success"
+          value="14"
+          min="5"
+          max="128"></progress>
+      </div>
+    </div>
+
+    <div class="options">
+      <div data-option="uppercase">
+        <span>[A-Z]</span>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="uppercase"
+            checked />
+          <span>Yes</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="uppercase" />
+          <span>No</span>
+        </label>
+      </div>
+
+      <div data-option="lowercase">
+        <span>[a-z]</span>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="lowercase"
+            checked />
+          <span>Yes</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="lowercase" />
+          <span>No</span>
+        </label>
+      </div>
+
+      <div data-option="number">
+        <span>[0-9]</span>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="number"
+            checked />
+          <span>Yes</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="number" />
+          <span>No</span>
+        </label>
+      </div>
+
+      <div data-option="special">
+        <span>[!@#$%^&*]</span>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="special" />
+          <span>Yes</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="special"
+            checked />
+          <span>No</span>
+        </label>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

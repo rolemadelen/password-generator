@@ -1,0 +1,44 @@
+body {
+  max-width: 960px;
+  margin: 10rem auto;
+  padding: 2rem;
+}
+
+.nes-container {
+  overflow-wrap: break-word;
+}
+.nes-container .text {
+  font-size: 2rem;
+}
+
+.wrapper,
+.options {
+  margin-top: 2rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options > div > span {
+  display: inline-block;
+  width: 10rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nes-field {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.nes-field input {
+  width: 120px;
+  margin-right: 1rem;
+  text-align: tcenter;
+}
