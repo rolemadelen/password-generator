@@ -70,4 +70,9 @@ function generatePassword() {
   }
 
   passwordField.innerText = password;
+
+  const passwordList = document.querySelector('.passwordList');
+  const li = document.createElement('li');
+  li.innerText = `${password} (${password.length})`;
+  passwordList.prepend(li);
 }
