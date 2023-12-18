@@ -40,5 +40,18 @@ body {
 .nes-field input {
   width: 120px;
   margin-right: 1rem;
-  text-align: tcenter;
+  text-align: center;
+}
+
+.passwordList {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  margin-top: 5rem;
+}
+
+.passwordList li {
+  color: #777;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
 }
