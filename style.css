@@ -1,19 +1,20 @@
 body {
   max-width: 960px;
-  margin: 10rem auto;
-  padding: 2rem;
+  margin: 10em auto;
+  padding: 2em;
 }
 
 .nes-container {
   overflow-wrap: break-word;
 }
+
 .nes-container .text {
   font-size: 2rem;
 }
 
 .wrapper,
 .options {
-  margin-top: 2rem;
+  margin-top: 2em;
 }
 
 .options {
@@ -24,7 +25,7 @@ body {
 
 .options > div > span {
   display: inline-block;
-  width: 10rem;
+  width: 10em;
 }
 
 .wrapper {
@@ -34,24 +35,26 @@ body {
 
 .nes-field {
   flex: 1;
-  margin-left: 2rem;
+  margin-left: 2em;
 }
 
 .nes-field input {
   width: 120px;
-  margin-right: 1rem;
+  margin-right: 1em;
   text-align: center;
 }
 
-.passwordList {
-  margin: 0;
-  padding: 0;
+.history {
+  margin-top: 5em;
   font-size: 0.8rem;
-  margin-top: 5rem;
+  color: #777;
 }
 
-.passwordList li {
-  color: #777;
-  margin-bottom: 1rem;
+.history ul {
+  padding: 0;
+}
+
+.history li {
+  margin-bottom: 1em;
   overflow-wrap: break-word;
 }
